@@ -1,0 +1,36 @@
+{
+  "manifestVersion": 1,
+  "id": "credentials-viewer",
+  "name": "Generic Connection Viewer",
+  "version": "0.0.3",
+  "publisher": "flamencist",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Export variables from Generic Service Connection",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "buildAndReleaseTask"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "custom-build-release-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "buildAndReleaseTask"
+      }
+    }
+  ]
+}

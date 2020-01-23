@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "afcda23d-6ce7-4fff-bfe6-a6dbc9057f28",
+  "name": "GenericConnectionViewer",
+  "friendlyName": "Generic Connection Viewer",
+  "description": "Export variables from Generic Service Connection",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Alexander Chermyanin",
+  "version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 0
+  },
+  "instanceNameFormat": "Export Generic Connection variables",
+  "inputs": [
+    {
+      "name": "credentials",
+      "type": "connectedService:Generic",
+      "label": "generic service connection",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "generic service connection"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "label": "url",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "variable for store url"
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "label": "username",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "variable for store username"
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "label": "password",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "variable for store password"
+    }
+  ],
+  "execution": {
+    "Node10": {
+      "target": "index.js"
+    }
+  }
+}
