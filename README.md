@@ -1,6 +1,5 @@
 # GenericConnectionViewer
 
-## Set Variables with Credential
 This task sets the url/username/password stored on a generic connection. This task can be used to centrally store a url/username/password and pass them to tasks that require a username/password without having to have the credentials replicated all over build/release definitions, with this task you can have single copy which can be centrally managed and change it centrally.
 
 This task has three parameters:
