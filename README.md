@@ -11,3 +11,5 @@ Password variable name
 In your can register service endpoints to store your reusable url/username/password to use in other tasks.
 
 You need to create a Credential endpoint to store the user name and password.
+
+Marketplace: https://marketplace.visualstudio.com/items?itemName=achermyanin.credentials-viewer
