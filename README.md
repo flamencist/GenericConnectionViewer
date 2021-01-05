@@ -1,5 +1,11 @@
 # GenericConnectionViewer
 
+Help support the project:
+
+<a href="https://www.buymeacoffee.com/flamencist" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+or Star project.
+
 This task sets the url/username/password stored on a generic connection. This task can be used to centrally store a url/username/password and pass them to tasks that require a username/password without having to have the credentials replicated all over build/release definitions, with this task you can have single copy which can be centrally managed and change it centrally.
 
 This task has three parameters:
