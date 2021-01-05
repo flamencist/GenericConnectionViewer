@@ -3,7 +3,11 @@
   "id": "credentials-viewer",
   "name": "Generic Connection Viewer",
   "version": "0.0.3",
-  "publisher": "flamencist",
+  "public": true,
+  "galleryFlags": [
+	"Public"
+  ],
+  "publisher": "achermyanin",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
@@ -21,6 +25,11 @@
       "path": "buildAndReleaseTask"
     }
   ],
+  "content": {
+	  "details": {
+		"path": "overview.md"
+	}
+  },
   "contributions": [
     {
       "id": "custom-build-release-task",
