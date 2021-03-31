@@ -19,3 +19,22 @@ In your can register service endpoints to store your reusable url/username/passw
 You need to create a Credential endpoint to store the user name and password.
 
 Marketplace: https://marketplace.visualstudio.com/items?itemName=achermyanin.credentials-viewer
+
+Example Pipeline Usage:
+```
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: GenericConnectionViewer@0
+  inputs:
+    credentials: '<My Generic Service Connection Name>'
+    url: 'url'
+    username: 'username'
+    password: 'password'
+
+- script: |
+    echo "url=$(url)"
+    echo "username=$(username)"
+    echo "password=$(password)"
+```
