@@ -11,3 +11,22 @@ Password variable name
 In your can register service endpoints to store your reusable url/username/password to use in other tasks.
 
 You need to create a Credential endpoint to store the user name and password.
+
+Example Pipeline Usage:
+```
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: GenericConnectionViewer@0
+  inputs:
+    credentials: '<My Generic Service Connection Name>'
+    url: 'url'
+    username: 'username'
+    password: 'password'
+
+- script: |
+    echo "url=$(url)"
+    echo "username=$(username)"
+    echo "password=$(password)"
+```
